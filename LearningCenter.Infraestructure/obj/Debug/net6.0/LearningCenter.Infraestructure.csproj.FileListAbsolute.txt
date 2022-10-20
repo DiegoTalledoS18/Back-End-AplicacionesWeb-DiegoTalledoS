@@ -13,3 +13,5 @@ C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.I
 C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Shared.dll
 C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Shared.pdb
 C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.Infraestructure\obj\Debug\net6.0\LearningCenter.Infraestructure.csproj.CopyComplete
+C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Infraestructure.runtimeconfig.json
+C:\Users\Diego\Documents\Frameworks\ASP.NET_Core\LearningCenter\LearningCenter.Infraestructure\obj\Debug\net6.0\LearningCenter.Infraestructure.genruntimeconfig.cache

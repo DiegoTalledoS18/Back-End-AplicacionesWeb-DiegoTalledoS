@@ -7,7 +7,9 @@ public class Tutorial:BaseModel
     public string Title { get; set; }
     
     public int Year { get; set; }
-    
+
+    public string Description { get; set; }
+
     public int Categoryid { get; set; }
     public Category Category { get; set; }
 }
