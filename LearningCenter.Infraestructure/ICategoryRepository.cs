@@ -2,9 +2,13 @@
 
 public interface ICategoryRepository
 {
-    List<string> getAll();
+    List<Category> getAll();
 
-    string getCategoryById(int id);
+    Category getCategoryById(int id);
 
     Boolean create(string name);
+
+    Boolean update(int id, string name);
+
+    Boolean Delete(int id);
 }

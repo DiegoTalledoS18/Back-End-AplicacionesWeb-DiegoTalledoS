@@ -33,12 +33,14 @@ public class LearningCentDB:DbContext//Esta clase hace referencia a la base de d
         builder.Entity<Category>().HasKey(p => p.Id);
         builder.Entity<Category>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<Category>().Property(c => c.Name).IsRequired().HasMaxLength(60);
+        builder.Entity<Category>().Property(c => c.Description).IsRequired().HasMaxLength(60);
         builder.Entity<Category>().Property(c => c.DateCreated).IsRequired().HasDefaultValue(DateTime.Now);
         builder.Entity<Category>().Property(c => c.IsActive).IsRequired().HasDefaultValue(true);
         
         
         builder.Entity<Tutorial>().ToTable("Tutorial");
         builder.Entity<Tutorial>().HasKey(p => p.Id);
+        builder.Entity<Tutorial>().HasKey(p => p.Description);
         builder.Entity<Category>().Property(c => c.DateCreated).IsRequired().HasDefaultValue(DateTime.Now);
         builder.Entity<Category>().Property(c => c.IsActive).IsRequired().HasDefaultValue(true);
 
