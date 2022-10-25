@@ -6,9 +6,9 @@ public interface ICategoryRepository
 
     Category getCategoryById(int id);
 
-    Boolean create(string name);
+    Task<bool> create(Category category);
 
-    Boolean update(int id, string name);
+    Boolean update(int id, Category category);
 
     Boolean Delete(int id);
 }

@@ -8,5 +8,5 @@ public class Category:BaseModel
     
     public string Description { get; set; }
     
-    public List<Tutorial> Tutorials { get; set; }//relacion uno a mucho
+    public List<Tutorial>? Tutorials { get; set; }//relacion uno a mucho
 }
