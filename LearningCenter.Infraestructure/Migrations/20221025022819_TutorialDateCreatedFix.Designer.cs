@@ -3,6 +3,7 @@ using System;
 using LearningCenter.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LearningCenter.Infraestructure.Migrations
 {
     [DbContext(typeof(LearningCentDB))]
-    partial class LearningCentDBModelSnapshot : ModelSnapshot
+    [Migration("20221025022819_TutorialDateCreatedFix")]
+    partial class TutorialDateCreatedFix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -28,7 +30,7 @@ namespace LearningCenter.Infraestructure.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime(6)")
-                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 38, 7, 685, DateTimeKind.Local).AddTicks(1498));
+                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 28, 19, 605, DateTimeKind.Local).AddTicks(695));
 
                     b.Property<DateTime?>("DateUpdated")
                         .HasColumnType("datetime(6)");
@@ -62,15 +64,14 @@ namespace LearningCenter.Infraestructure.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime(6)")
-                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 38, 7, 685, DateTimeKind.Local).AddTicks(2170));
+                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 28, 19, 605, DateTimeKind.Local).AddTicks(1611));
 
                     b.Property<DateTime?>("DateUpdated")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("varchar(60)");
+                        .HasColumnType("longtext");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -103,7 +104,7 @@ namespace LearningCenter.Infraestructure.Migrations
                     b.Property<DateTime>("DateCreated")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime(6)")
-                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 38, 7, 685, DateTimeKind.Local).AddTicks(2733));
+                        .HasDefaultValue(new DateTime(2022, 10, 24, 21, 28, 19, 605, DateTimeKind.Local).AddTicks(2409));
 
                     b.Property<DateTime?>("DateUpdated")
                         .HasColumnType("datetime(6)");
